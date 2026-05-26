@@ -21,7 +21,7 @@ def main() -> None:
                     session_questions = questions.copy()
                     random.shuffle(session_questions)
                     result = quiz_engine.run_quiz(session_questions)
-                    print(session_questions)
+                    #print(session_questions)
 
         except ValueError :
             print(f"nur die zulässigen optionen")

@@ -56,7 +56,8 @@ def run_quiz(questions: list[dict]) -> dict:
     #check_answer
         is_correct_answer = check_answer(answer, question)
         if is_correct_answer:
-            print(f"\U0001F662 Correct \U0001F660")
+            print(f"\U0001F662 Correct \U0001F660"
+                  f"\n{"-" * 30}")
             result["points"] += 1
         else:
             print(f"wrong answer \U0001F622")
