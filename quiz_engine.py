@@ -43,10 +43,11 @@ def check_answer(answer: int, question: dict) -> bool:
 def run_quiz(questions: list[dict]) -> dict:
     """Durchläuft ein komplettes Quiz"""
     #ergebniss speicher
-    result = {
+    results = {
         "points" : 0,
         "missed" : 0,
-        "total" : len(questions)
+        "total" : len(questions),
+        "run"  : []
     }
     #display_question
     for i, question in enumerate(questions, 1):
@@ -57,12 +58,22 @@ def run_quiz(questions: list[dict]) -> dict:
         is_correct_answer = check_answer(answer, question)
         if is_correct_answer:
             print(f"\U0001F662 Correct \U0001F660"
-                  f"\n{"-" * 30}")
-            result["points"] += 1
+                  f"\n{"-" * 30}\n")
+            results["points"] += 1
         else:
-            print(f"wrong answer \U0001F622")
-            result["missed"] += 1
+            print(f"wrong answer \U0001F622"
+                  f"\n{question["explanation"]}"
+                  f"\n{"-" * 30}\n")
+            results["missed"] += 1
 
+        results["run"].append(
+            {
+                "question" : question["question"],
+                "is_correct" : is_correct_answer,
+                "category" : question.get("category", "Unknown")
+            }
+        )
+    return results
 
 
 
@@ -74,4 +85,6 @@ def run_quiz(questions: list[dict]) -> dict:
 
 def display_results(results: dict) -> None:
     """Zeigt Ergebnisse an"""
-    pass
+    percent = (results["points"] / results["total"]) * 100
+    print(f"\U0001F668 Ergebnisse \U0001F668")
+    print(f"du hast {results["points"]}/{results["total"]} - {percent:.1f}% ")

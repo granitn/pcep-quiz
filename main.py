@@ -20,8 +20,33 @@ def main() -> None:
                 if choice == 1:
                     session_questions = questions.copy()
                     random.shuffle(session_questions)
-                    result = quiz_engine.run_quiz(session_questions)
+                    results = quiz_engine.run_quiz(session_questions)
+                    quiz_engine.display_results(results)
+                    all_results.append(results)
                     #print(session_questions)
+                elif choice == 2:
+                    print(all_results)
+                    if all_results:
+                        print(f"du hast {len(all_results)} Quizzes gemacht")
+
+                        for i, result in enumerate(all_results,1):
+                            all_percent = (result["points"]/result["total"]) * 100
+                            print(f"{i}. {result["points"]} von {result['total']} richtig ({all_percent:.0f}%) ")
+
+                        print(f"Gesamtpunkte: {sum(result["points"] for result in all_results)}"
+                              f"\n")
+
+
+
+                    else:
+                        print("du hast noch kein quiz gemacht")
+                elif choice == 3:
+                    print("Beehren sie uns bald wieder")
+                    break
+
+
+
+
 
         except ValueError :
             print(f"nur die zulässigen optionen")
