@@ -36,16 +36,11 @@ def main() -> None:
                         print(f"Gesamtpunkte: {sum(result["points"] for result in all_results)}"
                               f"\n")
 
-
-
                     else:
                         print("du hast noch kein quiz gemacht")
                 elif choice == 3:
                     print("Beehren sie uns bald wieder")
                     break
-
-
-
 
 
         except ValueError :
