@@ -45,6 +45,7 @@ def run_quiz(questions: list[dict]) -> dict:
     #ergebniss speicher
     results = {
         "points" : 0,
+        "answered" : 0,
         "missed" : 0,
         "total" : len(questions),
         "run"  : []
@@ -59,12 +60,14 @@ def run_quiz(questions: list[dict]) -> dict:
         if is_correct_answer:
             print(f"\U0001F662 Correct \U0001F660"
                   f"\n{"-" * 30}\n")
-            results["points"] += 1
+            results["answered"] += 1
+            results["points"] += question["difficulty"]
         else:
             print(f"wrong answer \U0001F622"
                   f"\n{question["explanation"]}"
                   f"\n{"-" * 30}\n")
             results["missed"] += 1
+
 
         results["run"].append(
             {
@@ -85,6 +88,6 @@ def run_quiz(questions: list[dict]) -> dict:
 
 def display_results(results: dict) -> None:
     """Zeigt Ergebnisse an"""
-    percent = (results["points"] / results["total"]) * 100
+    percent = (results["answered"] / results["total"]) * 100
     print(f"\U0001F668 Ergebnisse \U0001F668")
-    print(f"du hast {results["points"]}/{results["total"]} - {percent:.1f}% ")
+    print(f"du hast {results["answered"]}/{results["total"]} - {percent:.1f}% ")

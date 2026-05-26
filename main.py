@@ -30,8 +30,8 @@ def main() -> None:
                         print(f"du hast {len(all_results)} Quizzes gemacht")
 
                         for i, result in enumerate(all_results,1):
-                            all_percent = (result["points"]/result["total"]) * 100
-                            print(f"{i}. {result["points"]} von {result['total']} richtig ({all_percent:.0f}%) ")
+                            all_percent = (result["answered"]/result["total"]) * 100
+                            print(f"{i}. {result["answered"]} von {result['total']} richtig ({all_percent:.0f}%) ")
 
                         print(f"Gesamtpunkte: {sum(result["points"] for result in all_results)}"
                               f"\n")
