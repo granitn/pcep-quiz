@@ -73,7 +73,8 @@ def run_quiz(questions: list[dict]) -> dict:
             {
                 "question" : question["question"],
                 "is_correct" : is_correct_answer,
-                "category" : question.get("category", "Unknown")
+                "category" : question.get("category", "Unknown"),
+                "difficulty" : question["difficulty"]
             }
         )
     return results

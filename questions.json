@@ -1,0 +1,652 @@
+[
+  {
+    "question": "Welche Funktion wandelt einen String in eine Ganzzahl um?",
+    "options": [
+      "str()",
+      "float()",
+      "int()",
+      "bool()"
+    ],
+    "correct_index": 2,
+    "explanation": "int() konvertiert einen Wert in eine Ganzzahl.",
+    "category": "Functions",
+    "difficulty": 1
+  },
+  {
+    "question": "Was gibt len([1, 2, 3]) zurück?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "[1,2,3]"
+    ],
+    "correct_index": 1,
+    "explanation": "Die Liste enthält drei Elemente.",
+    "category": "Functions",
+    "difficulty": 1
+  },
+  {
+    "question": "Was passiert bei einer Division durch 0?",
+    "options": [
+      "TypeError",
+      "ValueError",
+      "ZeroDivisionError",
+      "SyntaxError"
+    ],
+    "correct_index": 2,
+    "explanation": "Division durch 0 löst einen ZeroDivisionError aus.",
+    "category": "Exceptions",
+    "difficulty": 1
+  },
+  {
+    "question": "Welche Methode macht alle Zeichen eines Strings klein?",
+    "options": [
+      "lower()",
+      "small()",
+      "downcase()",
+      "minimize()"
+    ],
+    "correct_index": 0,
+    "explanation": "lower() wandelt alle Buchstaben in Kleinbuchstaben um.",
+    "category": "Strings",
+    "difficulty": 1
+  },
+  {
+    "question": "Was ist das Ergebnis von 'Py' + 'thon'?",
+    "options": [
+      "Py thon",
+      "Python",
+      "Python",
+      "Error"
+    ],
+    "correct_index": 2,
+    "explanation": "Strings werden mit + verkettet.",
+    "category": "Strings",
+    "difficulty": 1
+  },
+  {
+    "question": "Welches Modul wird häufig für Zufallszahlen verwendet?",
+    "options": [
+      "math",
+      "random",
+      "numbers",
+      "chance"
+    ],
+    "correct_index": 1,
+    "explanation": "Das random-Modul enthält Funktionen für Zufallswerte.",
+    "category": "Modules and Packages",
+    "difficulty": 1
+  },
+  {
+    "question": "Was macht break in einer Schleife?",
+    "options": [
+      "Startet die Schleife neu",
+      "Überspringt einen Durchlauf",
+      "Beendet die Schleife",
+      "Löscht die Schleife"
+    ],
+    "correct_index": 2,
+    "explanation": "break beendet die aktuelle Schleife sofort.",
+    "category": "Control Flow",
+    "difficulty": 1
+  },
+  {
+    "question": "Welche Collection ist veränderbar?",
+    "options": [
+      "tuple",
+      "str",
+      "list",
+      "frozenset"
+    ],
+    "correct_index": 2,
+    "explanation": "Listen sind mutable.",
+    "category": "Data Types and Collections",
+    "difficulty": 1
+  },
+  {
+    "question": "Wie erstellt man ein leeres Dictionary?",
+    "options": [
+      "[]",
+      "()",
+      "{}",
+      "<>"
+    ],
+    "correct_index": 2,
+    "explanation": "{} erstellt ein leeres Dictionary.",
+    "category": "Data Types and Collections",
+    "difficulty": 1
+  },
+  {
+    "question": "Welche Ausgabe erzeugt bool('')?",
+    "options": [
+      "True",
+      "False",
+      "None",
+      "Error"
+    ],
+    "correct_index": 1,
+    "explanation": "Ein leerer String gilt als False.",
+    "category": "Boolean Logic",
+    "difficulty": 2
+  },
+  {
+    "question": "Was macht continue in einer Schleife?",
+    "options": [
+      "Beendet die Schleife",
+      "Überspringt den aktuellen Durchlauf",
+      "Stoppt das Programm",
+      "Springt zum Schleifenanfang ohne Bedingung"
+    ],
+    "correct_index": 1,
+    "explanation": "continue überspringt den aktuellen Schleifendurchlauf.",
+    "category": "Control Flow",
+    "difficulty": 1
+  },
+  {
+    "question": "Welche Exception entsteht bei int('abc')?",
+    "options": [
+      "TypeError",
+      "NameError",
+      "ValueError",
+      "SyntaxError"
+    ],
+    "correct_index": 2,
+    "explanation": "Ein nicht numerischer String kann nicht in int konvertiert werden.",
+    "category": "Exceptions",
+    "difficulty": 1
+  },
+  {
+    "question": "Was gibt [x * 2 for x in [1,2,3]] zurück?",
+    "options": [
+      "[1,2,3]",
+      "[2,4,6]",
+      "[1,4,9]",
+      "[2,3,4]"
+    ],
+    "correct_index": 1,
+    "explanation": "Jedes Element wird mit 2 multipliziert.",
+    "category": "Comprehensions",
+    "difficulty": 1
+  },
+  {
+    "question": "Welche Aussage über Tupel stimmt?",
+    "options": [
+      "Sie sind mutable",
+      "Sie unterstützen append()",
+      "Sie sind immutable",
+      "Sie können keine Zahlen speichern"
+    ],
+    "correct_index": 2,
+    "explanation": "Tupel können nach der Erstellung nicht verändert werden.",
+    "category": "Data Types and Collections",
+    "difficulty": 2
+  },
+  {
+    "question": "Was macht die Methode strip()?",
+    "options": [
+      "Entfernt Leerzeichen am Anfang und Ende",
+      "Löscht alle Leerzeichen",
+      "Konvertiert zu Großbuchstaben",
+      "Entfernt Zahlen"
+    ],
+    "correct_index": 0,
+    "explanation": "strip() entfernt Whitespaces außen.",
+    "category": "Strings",
+    "difficulty": 1
+  },
+  {
+    "question": "Welche Datei-Modus überschreibt eine bestehende Datei?",
+    "options": [
+      "r",
+      "a",
+      "w",
+      "x"
+    ],
+    "correct_index": 2,
+    "explanation": "w schreibt die Datei neu.",
+    "category": "File Handling",
+    "difficulty": 1
+  },
+  {
+    "question": "Was gibt range(3) zurück?",
+    "options": [
+      "[1,2,3]",
+      "[0,1,2]",
+      "Ein range-Objekt",
+      "(0,1,2)"
+    ],
+    "correct_index": 2,
+    "explanation": "range() erzeugt ein range-Objekt.",
+    "category": "Control Flow",
+    "difficulty": 2
+  },
+  {
+    "question": "Welche Methode fügt ein Element an eine Liste an?",
+    "options": [
+      "push()",
+      "append()",
+      "insert_last()",
+      "add()"
+    ],
+    "correct_index": 1,
+    "explanation": "append() fügt ein Element ans Listenende hinzu.",
+    "category": "Data Types and Collections",
+    "difficulty": 1
+  },
+  {
+    "question": "Was ist das Ergebnis von 3 == 3.0?",
+    "options": [
+      "False",
+      "True",
+      "TypeError",
+      "None"
+    ],
+    "correct_index": 1,
+    "explanation": "Python vergleicht Werte unabhängig vom numerischen Typ.",
+    "category": "Boolean Logic",
+    "difficulty": 2
+  },
+  {
+    "question": "Welche Aussage über Sets stimmt?",
+    "options": [
+      "Sie erlauben doppelte Werte",
+      "Sie sind sortiert",
+      "Sie enthalten nur Strings",
+      "Sie enthalten nur eindeutige Werte"
+    ],
+    "correct_index": 3,
+    "explanation": "Sets speichern nur einzigartige Elemente.",
+    "category": "Data Types and Collections",
+    "difficulty": 1
+  },
+  {
+    "question": "Was gibt 'Python'[0] zurück?",
+    "options": [
+      "P",
+      "y",
+      "Python",
+      "0"
+    ],
+    "correct_index": 0,
+    "explanation": "Index 0 liefert das erste Zeichen.",
+    "category": "Strings",
+    "difficulty": 1
+  },
+  {
+    "question": "Welche Exception entsteht beim Zugriff auf einen ungültigen Listenindex?",
+    "options": [
+      "ValueError",
+      "KeyError",
+      "IndexError",
+      "LookupError"
+    ],
+    "correct_index": 2,
+    "explanation": "Ein ungültiger Listenindex erzeugt IndexError.",
+    "category": "Exceptions",
+    "difficulty": 1
+  },
+  {
+    "question": "Welche Aussage über Dictionary-Keys stimmt?",
+    "options": [
+      "Keys dürfen doppelt vorkommen",
+      "Keys müssen mutable sein",
+      "Keys müssen eindeutig sein",
+      "Keys müssen Zahlen sein"
+    ],
+    "correct_index": 2,
+    "explanation": "Dictionary-Keys sind eindeutig.",
+    "category": "Data Types and Collections",
+    "difficulty": 2
+  },
+  {
+    "question": "Was macht pass in Python?",
+    "options": [
+      "Beendet eine Funktion",
+      "Ignoriert Fehler",
+      "Tut nichts",
+      "Springt zur nächsten Zeile"
+    ],
+    "correct_index": 2,
+    "explanation": "pass ist ein Platzhalter ohne Funktionalität.",
+    "category": "Miscellaneous",
+    "difficulty": 1
+  },
+  {
+    "question": "Welche Aussage über finally stimmt?",
+    "options": [
+      "finally wird nur bei Fehlern ausgeführt",
+      "finally wird nie nach return ausgeführt",
+      "finally wird immer ausgeführt",
+      "finally ersetzt except"
+    ],
+    "correct_index": 2,
+    "explanation": "finally wird unabhängig von Exceptions ausgeführt.",
+    "category": "Exceptions",
+    "difficulty": 2
+  },
+  {
+    "question": "Was ist das Ergebnis von [1,2] * 2?",
+    "options": [
+      "[1,2,1,2]",
+      "[2,4]",
+      "[1,1,2,2]",
+      "Error"
+    ],
+    "correct_index": 0,
+    "explanation": "Listen werden wiederholt.",
+    "category": "Data Types and Collections",
+    "difficulty": 2
+  },
+  {
+    "question": "Welche Methode teilt einen String anhand eines Trennzeichens?",
+    "options": [
+      "divide()",
+      "cut()",
+      "split()",
+      "partition_only()"
+    ],
+    "correct_index": 2,
+    "explanation": "split() zerlegt Strings.",
+    "category": "Strings",
+    "difficulty": 1
+  },
+  {
+    "question": "Was bewirkt import math?",
+    "options": [
+      "Installiert math",
+      "Importiert das math-Modul",
+      "Erstellt ein Objekt",
+      "Aktiviert mathematische Operatoren"
+    ],
+    "correct_index": 1,
+    "explanation": "Das Modul wird verfügbar gemacht.",
+    "category": "Modules and Packages",
+    "difficulty": 1
+  },
+  {
+    "question": "Welche Aussage zu Klassen stimmt?",
+    "options": [
+      "Klassen können keine Methoden haben",
+      "Objekte werden aus Klassen erstellt",
+      "Klassen sind Funktionen",
+      "Klassen können keine Attribute besitzen"
+    ],
+    "correct_index": 1,
+    "explanation": "Klassen dienen als Baupläne für Objekte.",
+    "category": "Object-Oriented Programming",
+    "difficulty": 1
+  },
+  {
+    "question": "Wofür wird self in Methoden verwendet?",
+    "options": [
+      "Für globale Variablen",
+      "Für Klassenimporte",
+      "Für die aktuelle Instanz",
+      "Für Exceptions"
+    ],
+    "correct_index": 2,
+    "explanation": "self referenziert das aktuelle Objekt.",
+    "category": "Object-Oriented Programming",
+    "difficulty": 2
+  },
+  {
+    "question": "Was passiert bei x = y = []?",
+    "options": [
+      "Es entstehen zwei unabhängige Listen",
+      "x und y referenzieren dieselbe Liste",
+      "Python erzeugt einen Fehler",
+      "Nur x enthält eine Liste"
+    ],
+    "correct_index": 1,
+    "explanation": "Beide Variablen zeigen auf dieselbe Liste.",
+    "category": "Miscellaneous",
+    "difficulty": 3
+  },
+  {
+    "question": "Welche Ausgabe liefert bool([])?",
+    "options": [
+      "True",
+      "False",
+      "None",
+      "Error"
+    ],
+    "correct_index": 1,
+    "explanation": "Leere Collections sind falsy.",
+    "category": "Boolean Logic",
+    "difficulty": 2
+  },
+  {
+    "question": "Was macht yield in Python?",
+    "options": [
+      "Beendet eine Schleife",
+      "Erstellt einen Generator",
+      "Importiert ein Modul",
+      "Fängt Exceptions"
+    ],
+    "correct_index": 1,
+    "explanation": "yield erzeugt Generatoren.",
+    "category": "Iterators and Generators",
+    "difficulty": 2
+  },
+  {
+    "question": "Welche Funktion liefert das nächste Element eines Iterators?",
+    "options": [
+      "iter()",
+      "yield()",
+      "next()",
+      "step()"
+    ],
+    "correct_index": 2,
+    "explanation": "next() liefert das nächste Iterator-Element.",
+    "category": "Iterators and Generators",
+    "difficulty": 2
+  },
+  {
+    "question": "Welche Exception signalisiert das Ende eines Iterators?",
+    "options": [
+      "StopError",
+      "EndIteration",
+      "StopIteration",
+      "IteratorError"
+    ],
+    "correct_index": 2,
+    "explanation": "Iteratoren lösen StopIteration aus.",
+    "category": "Iterators and Generators",
+    "difficulty": 2
+  },
+  {
+    "question": "Was ist das Ergebnis von not True and False?",
+    "options": [
+      "True",
+      "False",
+      "None",
+      "Error"
+    ],
+    "correct_index": 1,
+    "explanation": "not hat höhere Priorität als and.",
+    "category": "Boolean Logic",
+    "difficulty": 3
+  },
+  {
+    "question": "Was macht super() typischerweise?",
+    "options": [
+      "Erstellt globale Variablen",
+      "Greift auf die Elternklasse zu",
+      "Löscht Klassenattribute",
+      "Startet den Garbage Collector"
+    ],
+    "correct_index": 1,
+    "explanation": "super() wird für Vererbung genutzt.",
+    "category": "Object-Oriented Programming",
+    "difficulty": 2
+  },
+  {
+    "question": "Welche Ausgabe erzeugt 'abc'[-1]?",
+    "options": [
+      "a",
+      "b",
+      "c",
+      "Error"
+    ],
+    "correct_index": 2,
+    "explanation": "Negative Indizes zählen von hinten.",
+    "category": "Strings",
+    "difficulty": 2
+  },
+  {
+    "question": "Welche Aussage zu List Comprehensions stimmt?",
+    "options": [
+      "Sie erzeugen immer Tupel",
+      "Sie können Listen kompakt erzeugen",
+      "Sie funktionieren nur mit Zahlen",
+      "Sie ersetzen Funktionen vollständig"
+    ],
+    "correct_index": 1,
+    "explanation": "List Comprehensions erzeugen Listen kompakt.",
+    "category": "Comprehensions",
+    "difficulty": 1
+  },
+  {
+    "question": "Was macht isinstance(x, int)?",
+    "options": [
+      "Konvertiert x zu int",
+      "Prüft ob x ein int ist",
+      "Gibt den Speicherort zurück",
+      "Vergleicht zwei ints"
+    ],
+    "correct_index": 1,
+    "explanation": "isinstance prüft Datentypen.",
+    "category": "Functions",
+    "difficulty": 2
+  },
+  {
+    "question": "Welche Ausgabe liefert list(range(2, 6))?",
+    "options": [
+      "[2,3,4,5]",
+      "[2,3,4,5,6]",
+      "[1,2,3,4,5]",
+      "[3,4,5,6]"
+    ],
+    "correct_index": 0,
+    "explanation": "Der Endwert ist exklusiv.",
+    "category": "Control Flow",
+    "difficulty": 2
+  },
+  {
+    "question": "Was passiert bei einem Key-Zugriff auf ein fehlendes Dictionary-Element?",
+    "options": [
+      "IndexError",
+      "TypeError",
+      "KeyError",
+      "LookupFail"
+    ],
+    "correct_index": 2,
+    "explanation": "Fehlende Dictionary-Keys erzeugen KeyError.",
+    "category": "Exceptions",
+    "difficulty": 2
+  },
+  {
+    "question": "Welche Aussage über Lambda-Funktionen stimmt?",
+    "options": [
+      "Sie benötigen immer mehrere Zeilen",
+      "Sie sind anonyme Funktionen",
+      "Sie können keine Parameter besitzen",
+      "Sie ersetzen Klassen"
+    ],
+    "correct_index": 1,
+    "explanation": "Lambdas sind kleine anonyme Funktionen.",
+    "category": "Functions",
+    "difficulty": 2
+  },
+  {
+    "question": "Was macht __init__ in einer Klasse?",
+    "options": [
+      "Löscht Objekte",
+      "Initialisiert Objekte",
+      "Importiert Klassen",
+      "Vergleicht Instanzen"
+    ],
+    "correct_index": 1,
+    "explanation": "__init__ wird beim Erstellen eines Objekts aufgerufen.",
+    "category": "Object-Oriented Programming",
+    "difficulty": 1
+  },
+  {
+    "question": "Welche Ausgabe liefert bool(None)?",
+    "options": [
+      "True",
+      "False",
+      "None",
+      "Error"
+    ],
+    "correct_index": 1,
+    "explanation": "None ist falsy.",
+    "category": "Boolean Logic",
+    "difficulty": 2
+  },
+  {
+    "question": "Was macht open('file.txt', 'a')?",
+    "options": [
+      "Datei nur lesen",
+      "Datei überschreiben",
+      "An Datei anhängen",
+      "Datei löschen"
+    ],
+    "correct_index": 2,
+    "explanation": "a steht für append.",
+    "category": "File Handling",
+    "difficulty": 1
+  },
+  {
+    "question": "Welche Aussage über Python-Module stimmt?",
+    "options": [
+      "Ein Modul kann nur eine Funktion enthalten",
+      "Module organisieren Code",
+      "Module können keine Klassen enthalten",
+      "Module ersetzen Packages"
+    ],
+    "correct_index": 1,
+    "explanation": "Module dienen der Codeorganisation.",
+    "category": "Modules and Packages",
+    "difficulty": 1
+  },
+  {
+    "question": "Was gibt {'a':1}.get('b') standardmäßig zurück?",
+    "options": [
+      "0",
+      "False",
+      "None",
+      "KeyError"
+    ],
+    "correct_index": 2,
+    "explanation": "get() liefert standardmäßig None.",
+    "category": "Data Types and Collections",
+    "difficulty": 2
+  },
+  {
+    "question": "Welche Aussage über mutable Objekte stimmt?",
+    "options": [
+      "Sie können nicht verändert werden",
+      "Sie besitzen keinen Speicherplatz",
+      "Sie können nachträglich verändert werden",
+      "Sie sind immer Zahlen"
+    ],
+    "correct_index": 2,
+    "explanation": "Mutable Objekte können verändert werden.",
+    "category": "Miscellaneous",
+    "difficulty": 3
+  },
+  {
+    "question": "Welche Ausgabe liefert [i for i in range(5) if i % 2 == 0]?",
+    "options": [
+      "[1,3,5]",
+      "[0,2,4]",
+      "[2,4]",
+      "[0,1,2,3,4]"
+    ],
+    "correct_index": 1,
+    "explanation": "Die Comprehension filtert gerade Zahlen.",
+    "category": "Comprehensions",
+    "difficulty": 2
+  }
+]
